@@ -1,0 +1,382 @@
+body {
+  font-family: Verdana, Arial;
+  background: url("../img/Background.webp") top center #cfcfcf;
+  padding: 0 0 0 20px;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+#principal {
+  width: 680px;
+  margin: 0 auto;
+  background: #FEFEFE;
+  padding: 30px;
+  border: 5px solid #EFEFEF;
+  position: relative; }
+
+.primario header {
+  height: 120px;
+  margin: 0 auto;
+  transition: all .5s ease 0; }
+
+#twitter {
+  opacity: 1;
+  transition: all .5s ease 0; }
+
+.timer #logo {
+  background: url("../img/timeronline.png") no-repeat center;
+  width: 215px;
+  height: 57px;
+  display: block;
+  clear: right;
+  float: left;
+  margin-left: 70px;
+  margin-top: 17px; }
+
+.cronometro #logo {
+  background: url("../img/cronometronline.png") no-repeat center;
+  width: 500px;
+  height: 120px;
+  display: block;
+  clear: right;
+  margin: 0 auto; }
+
+#logo h1 {
+  text-indent: -99999px;
+  margin: 0; }
+
+#digite-aqui {
+  content: " ";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url("../img/digite-aqui.png") no-repeat right center;
+  float: right;
+  margin-right: 70px; }
+  #digite-aqui p {
+    text-indent: -99999px;
+    margin: 0; }
+
+.clean {
+  border: none;
+  margin: auto; }
+
+.language {
+  display: block;
+  width: 16px;
+  height: 11px;
+  text-indent: -99999px; }
+
+.flag-english {
+  background: url("../img/flag-english.gif") no-repeat;
+  float: right; }
+  .flag-english:hover {
+    background: url("../img/flag-english-over.gif") no-repeat; }
+
+.flag-portuguese {
+  background: url("../img/flag-portuguese.gif") no-repeat;
+  float: right; }
+  .flag-portuguese:hover {
+    background: url("../img/flag-portuguese-over.gif") no-repeat; }
+
+#flag {
+  margin: 0; }
+  #flag span {
+    color: #ccc;
+    font-size: 10px;
+    float: right;
+    margin: 0 5px; }
+
+.box {
+  margin: 0 auto;
+  width: 534px;
+  height: 125px;
+  margin-bottom: 36px;
+  position: relative;
+  clear: both; }
+
+.cronometro .box {
+  width: 550px; }
+
+#time-input {
+  border: 1px solid #7f7f7f;
+  box-shadow: inset 1px 1px 2px #bbb;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica;
+  font-size: 114px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #7abc4b;
+  text-shadow: 1px 1px 1px #b1bea9;
+  padding: 0;
+  transition: all 0 ease .5s;
+  position: absolute;
+  opacity: 1px;
+  font-family: Helvetica;
+  font-size: 114px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0px;
+  text-shadow: 1px 1px 1px #b1bea9;
+  color: #7abc4b; }
+  #time-input input {
+    font-family: Helvetica;
+    font-size: 114px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 1px #b1bea9;
+    color: #7abc4b;
+    border: 0;
+    width: 135px;
+    background: none;
+    padding: 0;
+    margin: 0;
+    height: 100%; }
+    #time-input input:focus {
+      outline: none; }
+  #time-input .minutes {
+    text-align: right; }
+  #time-input .seconds {
+    text-align: left; }
+
+#difference {
+  visibility: hidden;
+  margin: 0 auto;
+  font-family: Helvetica;
+  font-size: 114px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #7abc4b;
+  text-shadow: 1px 1px 1px #b1bea9;
+  line-height: 128px;
+  transition: all 0 ease .5s;
+  position: absolute;
+  width: 100%; }
+
+.cronometro #difference {
+  visibility: visible;
+  font-size: 120px;
+  color: #4EC6EA;
+  text-shadow: 1px 1px 1px #40A6C4; }
+
+#acoes {
+  height: 86px;
+  margin: 15px 0; }
+  #acoes a {
+    width: 246px;
+    display: block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 27px 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family: Helvetica, "MS Trebuchet", sans-serif;
+    letter-spacing: 1px; }
+    #acoes a .subtitle {
+      font-size: 12px;
+      display: block;
+      font-weight: normal;
+      font-style: italic; }
+  #acoes #start_button {
+    background: #339933;
+    float: left;
+    margin: 0 0 0 70px;
+    color: #AAFFAA; }
+    #acoes #start_button:hover {
+      background: #117711; }
+  #acoes #stop_button {
+    background: #993333;
+    float: left;
+    margin: 0 0 0 70px;
+    color: #FFAAAA; }
+    #acoes #stop_button:hover {
+      background: #771111; }
+  #acoes #esc_button {
+    background: #AAA;
+    float: right;
+    margin: 0 70px 0 0;
+    color: #666; }
+    #acoes #esc_button:hover {
+      background: #999; }
+
+#twitter {
+  background: #eee;
+  height: 80px;
+  margin: 40px 70px 20px;
+  padding: 20px;
+  position: relative; }
+  #twitter #tweet_button {
+    background: url("../img/discord.png") no-repeat;
+    float: right;
+    display: block;
+    text-indent: -99999px;
+    height: 76px;
+    width: 96px;
+    outline: 0;
+    float: right; }
+  #twitter #message_text {
+    background-color: #FFF;
+    border-color: #999;
+    color: #888;
+    display: block;
+    height: 66px;
+    width: 370px;
+    padding: 3px 5px;
+    font-size: 18px;
+    float: left; }
+  #twitter p {
+    color: #717275;
+    font-size: 14px;
+    margin: 0;
+    padding-right: 75px; }
+
+#chars_left {
+  position: absolute;
+  right: 70px;
+  bottom: 30px;
+  font-size: 10px;
+  font-family: Helvetica, arial;
+  color: #ccc; }
+
+footer {
+  width: 540px;
+  margin: 0 auto;
+  transition: all 1s;
+  opacity: 1; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+footer a {
+  color: #40A6C4;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  float: left; }
+
+a#info {
+  float: right; }
+  a#info:hover {
+    color: #62C8E6; }
+
+#info-box {
+  display: none;
+  position: absolute;
+  right: 9px;
+  bottom: 50px;
+  width: 700px;
+  height: 135px;
+  padding: 10px;
+  background: #F5F5F5;
+  border: 1px solid #CCC;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  #info-box p {
+    font-size: 12px;
+    margin: 5px;
+    color: #888; }
+  #info-box h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #666; }
+
+#anuncio {
+  width: 726px;
+  margin: 0 auto;
+  margin-bottom: 10px; }
+
+#complete-message .close {
+  display: block;
+  float: right; }
+
+#complete-message.shown {
+  visibility: visible;
+  opacity: 1; }
+
+.started .primario header, .restarted .primario header {
+  opacity: 0;
+  overflow: hidden;
+  height: 0px;
+  transition: opacity 1s ease 0, height 1s ease .5s; }
+
+.started #twitter, .restarted #twitter {
+  opacity: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  transition: opacity 1s ease 0, height 1s ease 0.5s, padding 1s ease 0.5s, margin 1s ease 0.5s; }
+
+.started footer, .restarted footer {
+  opacity: 0;
+  overflow: hidden; }
+
+.started #time-input, .restarted #time-input {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0 ease 0; }
+
+.started #difference, .restarted #difference {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0 ease 0; }
+
+.started #digite-aqui, .restarted #digite-aqui {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0 ease 0; }
+
+.stoped .primario header {
+  transition: opacity .8s ease 0, height 0 ease 0; }
+
+.stoped #time-input {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0 ease 0; }
+
+.stoped #twitter {
+  transition: opacity .8s ease 0, height 0 ease 0; }
+
+.stoped #difference {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0 ease 0; }
+
+.stoped #digite-aqui {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s ease 0; }
+
+.paused #digite-aqui {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0 ease 0; }
+
+.paused #difference {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0 ease 0; }
+
+.paused #time-input {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0 ease 0; }
+
+.paused .primario header {
+  transition: opacity 0 ease 0, height 0 ease 0; }
+
+.paused #time-input {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0 ease 0; }
+
+/*# sourceMappingURL=style.css.map */
